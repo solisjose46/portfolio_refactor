@@ -248,6 +248,19 @@
     font-size: var(--font-size);
     background: var(--color);
   }
+  ul{
+    margin-top: 3rem;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  li{
+    color: var(--red);
+  }
+  li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+  }
 
   h2:before,
   h2:after {
@@ -394,6 +407,17 @@
 
   .arrow.yellow {
     --color: var(--yellow);
+  }
+  .social_twitter {
+    --mask: url(./twitter.svg);
+  }
+  
+  .social_github {
+  --mask: url(./github.svg);
+  }
+
+  .social_linkedin {
+    --mask: url(./linkedin.svg);
   }
 
   .icon {

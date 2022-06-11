@@ -449,6 +449,7 @@
   .gif-card{
     --color: var(--red);
     --font-size: calc(0.8 * var(--grid-height));
+    word-wrap: break-word;
 
     position: relative;
 
@@ -530,8 +531,8 @@ button:active {
 }
 
 .gif-card{
-  height: 650px;
-  width: fit-content;
+  height: fit-content;
+  width: 300px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -550,6 +551,27 @@ button:active {
   margin-left: auto;
   margin-right: auto;
   height: 350px;
+}
+
+.project-card{
+  background-color: var(--red);
+  color: var(--white);
+  margin: 1rem;
+}
+
+.card-action{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card-link{
+  margin: auto;
+  color: var(--blue);
+}
+
+.card-link:hover{
+  cursor: pointer;
+  color: var(--white);
 }
 
 @media (max-width: 990px) {
@@ -574,7 +596,7 @@ button:active {
     grid-column: span 1;
   }
 
-  button, .gif-card{
+  button, .gif-card, .card-link{
     font-size: calc(1.5 * var(--grid-height));
   }
 }

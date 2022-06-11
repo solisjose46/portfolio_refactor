@@ -4,7 +4,7 @@ function handleClick(target, elements){
     const targetClasses = target.className; 
     let targetName = targetClasses.replace("menu-items", "");
 
-    console.log(`clicked ${targetName}`);
+    // console.log(`clicked ${targetName}`);
 
     elements.forEach((element) => {
         let elementClasses = element.className; 
@@ -12,12 +12,13 @@ function handleClick(target, elements){
 
         if(targetName === elementName){
             element.hidden = false;
+            element.scrollIntoView();
         }
         else{
             element.hidden = true;
         }
 
-        console.log(`iterating over ${elementName}`);
+        // console.log(`iterating over ${elementName}`);
     });
 }
 
@@ -25,4 +26,8 @@ menuItems.forEach(menuItem => {
     menuItem.addEventListener("click", ()=>{
         handleClick(menuItem, sections);
     });
+});
+
+document.getElementById("contact").addEventListener("click", ()=>{
+    document.getElementById("contact-card").scrollIntoView();
 });

@@ -205,23 +205,23 @@
   <div class="sections security" hidden>
     <h2 class="text-gutter">Security Certifications</h2>
 
-    <!-- gsec -->
-    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="38adaacb-d202-40ea-9e4d-940d93533f03"
-      data-share-badge-host="https://www.credly.com"></div>
-    <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-    <!-- gsec -->
+    <div class="cert-gallery">
+      <!-- gsec -->
+      <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="38adaacb-d202-40ea-9e4d-940d93533f03"
+        data-share-badge-host="https://www.credly.com"></div>
+      <!-- gsec -->
 
-    <!-- gcih -->
-    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="3c0510c9-342d-4ac6-9b58-24e1d87a4aa5"
-      data-share-badge-host="https://www.credly.com"></div>
-    <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-    <!-- gcih -->
+      <!-- gcih -->
+      <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="3c0510c9-342d-4ac6-9b58-24e1d87a4aa5"
+        data-share-badge-host="https://www.credly.com"></div>
+      <!-- gcih -->
 
-    <!-- gwapt -->
-    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="4d29654b-1eb7-4c3c-86ce-00872395d7c1"
-      data-share-badge-host="https://www.credly.com"></div>
-    <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-    <!-- gwapt -->
+      <!-- gwapt -->
+      <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="4d29654b-1eb7-4c3c-86ce-00872395d7c1"
+        data-share-badge-host="https://www.credly.com"></div>
+      <!-- gwapt -->
+    </div>
+
 
   </div>
   <!-- Security Certs -->
@@ -248,6 +248,13 @@
     </section>
   </footer>
   <script src="index.js"></script>
+  <script type="text/javascript" src="//cdn.credly.com/assets/utilities/embed.js"></script>
+  <script>
+    const iframes = document.querySelectorAll("iframe");
+    iframes.forEach((frame) => {
+      frame.style = "";
+    });
+  </script>
 </body>
 
 </html>

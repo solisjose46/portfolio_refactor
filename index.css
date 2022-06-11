@@ -541,31 +541,40 @@ button:active {
   width: 300px;
 }
 
-.gif-gallery {
+.gif-gallery, .cert-gallery {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+.cert-gallery > iframe{
+  margin-left: auto;
+  margin-right: auto;
+  height: 350px;
+}
+
 @media (max-width: 990px) {
-  .gif-gallery {
-    display: grid;
+  .gif-gallery, .cert-gallery {
     grid-template-columns: 1fr 1fr;
   }
 
-  .gallery-item-3{
+  .gallery-item-3, #embedded-badge-4d29654b-1eb7-4c3c-86ce-00872395d7c1{
     grid-column: span 2;
   }
 }
 
 @media (max-width: 720px) {
-  .gif-gallery {
+  .gif-gallery{
     display: block;
   }
 
-  @media (max-width: 720px) {
-    button, .gif-card{
-      font-size: calc(1.5 * var(--grid-height));
-    }
-    
+  .cert-gallery{
+    grid-template-columns: 1fr;
+  }
+  #embedded-badge-4d29654b-1eb7-4c3c-86ce-00872395d7c1{
+    grid-column: span 1;
+  }
+
+  button, .gif-card{
+    font-size: calc(1.5 * var(--grid-height));
   }
 }
